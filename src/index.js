@@ -1,6 +1,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
+import _ from "lodash"
 
-export function useWindowResize() {
+export function useWindowResize( debounceLimit = 10 ) {
 
   const width = ref(window.innerWidth)
   const height = ref(window.innerHeight)
@@ -11,7 +12,7 @@ export function useWindowResize() {
   }
 
   onMounted(() => {
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', _.debounce(handleResize, debounceLimit))
   })
 
   onUnmounted(() => {

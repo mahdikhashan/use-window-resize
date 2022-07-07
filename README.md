@@ -1,7 +1,7 @@
 # use-window-resize
 ![npm (tag)](https://img.shields.io/npm/v/@mahdikhashan/use-window-resize/latest?style=plastic)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mahdikhashan/use-window-resize)
-![npm](https://img.shields.io/npm/dy/@mahdikhashan/vue3-click-outside)
+![npm](https://img.shields.io/npm/dy/@mahdikhashan/use-window-resize)
 ![npm peer dependency version](https://img.shields.io/npm/dependency-version/@mahdikhashan/use-window-resize/peer/vue)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mahdikhashan/use-window-resize)
 ![NPM](https://img.shields.io/npm/l/@mahdikhashan/use-window-resize)

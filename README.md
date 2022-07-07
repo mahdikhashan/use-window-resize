@@ -6,8 +6,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mahdikhashan/use-window-resize)
 ![NPM](https://img.shields.io/npm/l/@mahdikhashan/use-window-resize)
 
-## Directive for Vue 3 to run a method on clicking outside of the binded element
-
+## Custom hook for Vue 3 to get page height and width
 
 --- 
 

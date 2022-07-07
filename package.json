@@ -1,0 +1,42 @@
+{
+  "name": "@mahdikhashan/use-window-resize",
+  "description": "A Vue.js 3 hook to listen to window resize event",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "babel-node src",
+    "build": "rimraf lib && babel src -d lib --ignore src/__tests__",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^28.1.1",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^28.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "vue": "3.x.x"
+  },
+  "homepage": "https://github.com/mahdikhashan/use-window-resize#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahdikhashan/use-window-resize"
+  },
+  "bugs": {
+    "url": "https://github.com/mahdikhashan/use-window-resize/issues",
+    "email": "mahdikhashan1@gmail.com"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "hook",
+    "composable",
+    "resizable"
+  ],
+  "author": "Mahdi Khashan",
+  "license": "MIT"
+}

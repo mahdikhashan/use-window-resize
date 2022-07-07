@@ -13,7 +13,7 @@
 
 ## Demo
 
-[Demo](https://codesandbox.io/s/vue3-click-out-side-i6zhbb)
+[Demo](https://codesandbox.io/s/use-window-resize-x6keg0)
 
 
 ## Installation
@@ -33,7 +33,7 @@ add the custom directive to you component
 </template>
 
 <script setup>
-import { useWindowResize } from '@/hooks/useWindowResize'
+import { useWindowResize } from '@mahdikhashan/use-window-resize'
 
 const { width, height } = useWindowResize(1)
 

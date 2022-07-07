@@ -9,7 +9,8 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -1,10 +1,10 @@
 # use-window-resize
-![npm (tag)](https://img.shields.io/npm/v/@mahdikhashan/vue3-click-outside/latest?style=plastic)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mahdikhashan/vue3-click-outside)
+![npm (tag)](https://img.shields.io/npm/v/@mahdikhashan/use-window-resize/latest?style=plastic)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mahdikhashan/use-window-resize)
 ![npm](https://img.shields.io/npm/dy/@mahdikhashan/vue3-click-outside)
-![npm peer dependency version](https://img.shields.io/npm/dependency-version/@mahdikhashan/vue3-click-outside/peer/vue)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mahdikhashan/vue3-click-outside)
-![NPM](https://img.shields.io/npm/l/@mahdikhashan/vue3-click-outside)
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/@mahdikhashan/use-window-resize/peer/vue)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mahdikhashan/use-window-resize)
+![NPM](https://img.shields.io/npm/l/@mahdikhashan/use-window-resize)
 
 ## Directive for Vue 3 to run a method on clicking outside of the binded element
 
@@ -19,7 +19,7 @@
 ## Installation
 
 ```
-npm install --save @mahdikhashan/vue3-click-outside
+npm install --save @mahdikhashan/use-window-resize
 ```
 
 ## How to use
@@ -27,53 +27,17 @@ add the custom directive to you component
 
 ```
 <template>
-  <main>
-    <div v-click-out-side="customMethod" @click="clickInside" class="box">
-      BOX
-    </div>
-    <br />
-    <p>Outside of the box</p>
-  </main>
+  <div class="main">
+    Page width {{ width }} and height {{ height }}
+  </div>
 </template>
 
-<script>
-import clickOutSide from "@mahdikhashan/vue3-click-outside";
+<script setup>
+import { useWindowResize } from '@/hooks/useWindowResize'
 
-export default {
-  name: "Box",
-  directives: {
-    clickOutSide,
-  },
-  props: {
-    msg: String,
-  },
-  methods: {
-    customMethod() {
-      alert("You clicked outside the box!");
-    },
-    clickInside() {
-      alert("You clicked inside the box!");
-    },
-  },
-};
+const { width, height } = useWindowResize(1)
+
 </script>
-
-<style scoped>
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  background-color: red;
-  width: 100px;
-  height: 100px;
-}
-p {
-  font-size: 2rem;
-  font-weight: 800;
-}
-</style>
-
 ```
 
 ## Contributing

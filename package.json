@@ -1,7 +1,7 @@
 {
   "name": "@mahdikhashan/use-window-resize",
   "description": "A Vue.js 3 hook to listen to window resize event",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "scripts": {
     "start": "babel-node src",
